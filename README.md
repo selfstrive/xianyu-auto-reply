@@ -194,13 +194,13 @@ xianyu-auto-reply/
 # 1. 创建数据目录
 mkdir -p xianyu-auto-reply
 
-# 2. 一键启动容器
+# 2. 一键启动容器  (本人的)
 docker run -d \
   -p 8080:8080 \
   -v $PWD/xianyu-auto-reply/:/app/data/ \
   --name xianyu-auto-reply \
   registry.cn-shenzhen.aliyuncs.com/divem_software/xianyu-auto-reply:1.0.2
-
+或者
 # 2. 一键启动容器
 docker run -d \
   -p 8080:8080 \
