@@ -199,6 +199,13 @@ docker run -d \
   -p 8080:8080 \
   -v $PWD/xianyu-auto-reply/:/app/data/ \
   --name xianyu-auto-reply \
+  registry.cn-shenzhen.aliyuncs.com/divem_software/xianyu-auto-reply:1.0.2
+
+# 2. 一键启动容器
+docker run -d \
+  -p 8080:8080 \
+  -v $PWD/xianyu-auto-reply/:/app/data/ \
+  --name xianyu-auto-reply \
   registry.cn-shanghai.aliyuncs.com/zhinian-software/xianyu-auto-reply:1.0.2
 
 # 3. 访问系统
